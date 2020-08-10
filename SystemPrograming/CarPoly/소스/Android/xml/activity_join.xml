@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keep"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurred"
+    android:gravity="center"
+    android:onClick="onClick"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Translucent">
+
+    <FrameLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/carpoly_logo_w" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="#4d4954"
+                android:hint="영문으로 기재해주세요."
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="PHONE NUMBER"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_phoneNumber"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="#4d4954"
+                android:hint="ex) 01012345678"
+
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="#4d4954"
+                android:hint="Password"
+
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Car number"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_carNumber"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="#4d4954"
+
+                android:hint="ex) 1234"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Car name"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edit_carName"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+
+                android:background="#4d4954"
+                android:hint="ex) morning"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="보험사 이름"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_bohum"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="#4d4954"
+                android:onClick="onClick"
+                android:text="선택"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_join"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="#38A6F0"
+                android:onClick="onClick"
+                android:text="Join"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="#38a6f0"
+                android:onClick="onClick"
+
+                android:text="Back"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

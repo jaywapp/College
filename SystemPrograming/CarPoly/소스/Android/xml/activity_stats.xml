@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurred"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+        <Button
+            android:layout_gravity="center_vertical"
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt"
+            android:onClick="onClick"/>
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/carpoly_logo_w" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/myinfor"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:onClick="onClick"
+                android:src="@drawable/myinfor" />
+
+            <ImageView
+                android:id="@+id/stats"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/select_back"
+                android:onClick="onClick"
+                android:src="@drawable/using" />
+
+            <ImageView
+                android:id="@+id/auth"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:onClick="onClick"
+                android:src="@drawable/auth" />
+
+            <ImageView
+                android:id="@+id/lock"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:onClick="onClick"
+                android:src="@drawable/lock" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Details of usage"
+                android:textSize="15pt"
+                android:textColor="#FFFFFF"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"></LinearLayout>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/table_stats">
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Start Time"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12pt"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="End Time"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12pt"
+                        android:gravity="center"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
